@@ -1,0 +1,43 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.modal-window {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  position: absolute;
+  background: linear-gradient(to bottom, #d3cce3, #e9e4f0);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  border: 1px solid #cccccc60;
+  border-radius: 10px;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
